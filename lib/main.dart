@@ -19,24 +19,25 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Sample App'),
+          title: Text(''),
+          backgroundColor: Colors.white,
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
                 Container(
-                    alignment: Alignment.center,
+                    alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'TutorialKart',
+                      'Booku',
                       style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 30),
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50),
                     )),
                 Container(
-                    alignment: Alignment.center,
+                    alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
                     child: Text(
                       'Sign in',
@@ -63,31 +64,35 @@ class _State extends State<MyApp> {
                     ),
                   ),
                 ),
-                FlatButton(
-                  onPressed: () {
-                    //forgot password screen
-                  },
-                  textColor: Colors.blue,
-                  child: Text('Forgot Password'),
+                Container(
+                  height: 50,
                 ),
                 Container(
                     height: 50,
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: RaisedButton(
                       textColor: Colors.white,
-                      color: Colors.blue,
+                      color: Colors.black,
                       child: Text('Login'),
                       onPressed: () {
                         print(nameController.text);
                         print(passwordController.text);
                       },
                     )),
+                FlatButton(
+                  padding: EdgeInsets.all(8.0),
+                  onPressed: () {
+                    //forgot password screen
+                  },
+                  textColor: Colors.grey,
+                  child: Text('Forgot Password?'),
+                ),
                 Container(
                     child: Row(
                   children: <Widget>[
                     Text('Does not have account?'),
                     FlatButton(
-                      textColor: Colors.blue,
+                      textColor: Colors.grey,
                       child: Text(
                         'Sign in',
                         style: TextStyle(fontSize: 20),
