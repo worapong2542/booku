@@ -1,14 +1,17 @@
+import 'package:booku/login.dart';
 import 'package:booku/screen.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
+class MyRegister extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _MyRegisterState createState() => _MyRegisterState();
 }
 
-class _LoginState extends State<Login> {
+class _MyRegisterState extends State<MyRegister> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController confirmpasswordController = TextEditingController();
 
   Widget BackBotton() {
     return Row(
@@ -55,7 +58,7 @@ class _LoginState extends State<Login> {
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'Sign in',
+                      'Register',
                       style: TextStyle(fontSize: 20),
                     )),
                 Container(
@@ -65,6 +68,16 @@ class _LoginState extends State<Login> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'User Name',
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: TextField(
+                    controller: emailController,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Email',
                     ),
                   ),
                 ),
@@ -80,6 +93,17 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                  child: TextField(
+                    obscureText: true,
+                    controller: confirmpasswordController,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Confirm Password',
+                    ),
+                  ),
+                ),
+                Container(
                   height: 50,
                 ),
                 Container(
@@ -88,42 +112,16 @@ class _LoginState extends State<Login> {
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.black,
-                      child: Text('Login'),
+                      child: Text('Register'),
                       onPressed: () {
                         print(nameController.text);
                         print(passwordController.text);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Login()),
+                        );
                       },
                     )),
-                SizedBox(
-                  height: 15.0,
-                ),
-                FlatButton(
-                  padding: EdgeInsets.all(8.0),
-                  onPressed: () {
-                    //forgot password screen
-                  },
-                  textColor: Colors.grey,
-                  child: Text('Forgot Password?'),
-                ),
-                SizedBox(
-                  height: 5.0,
-                ),
-                Container(
-                    child: Row(
-                  children: <Widget>[
-                    FlatButton(
-                      textColor: Colors.grey,
-                      child: Text(
-                        'Does not have account?',
-                        style: TextStyle(fontSize: 15),
-                      ),
-                      onPressed: () {
-                        //signup screen
-                      },
-                    )
-                  ],
-                  mainAxisAlignment: MainAxisAlignment.center,
-                ))
               ],
             )));
   }

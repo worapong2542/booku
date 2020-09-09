@@ -1,4 +1,3 @@
-import 'package:booku/login.dart';
 import 'package:booku/screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.black,
       ),
-      home: Login(),
+      home: Screen(),
     );
   }
 }

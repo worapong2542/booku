@@ -1,3 +1,4 @@
+import 'package:booku/myregister.dart';
 import 'package:flutter/material.dart';
 import 'package:booku/login.dart';
 
@@ -31,7 +32,12 @@ class _ScreenState extends State<Screen> {
             fontSize: 20.0,
           ),
         ),
-        onPressed: () {});
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Login()),
+          );
+        });
   }
 
   Widget Register() {
@@ -45,7 +51,12 @@ class _ScreenState extends State<Screen> {
             fontSize: 20.0,
           ),
         ),
-        onPressed: () {});
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyRegister()),
+          );
+        });
   }
 
   @override
