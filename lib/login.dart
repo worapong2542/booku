@@ -14,7 +14,7 @@ class _LoginState extends State<Login> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-  Widget BackBotton() {
+  Widget backbotton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
             padding: EdgeInsets.all(00),
             child: ListView(
               children: <Widget>[
-                BackBotton(),
+                backbotton(),
                 Container(
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
@@ -99,7 +99,7 @@ class _LoginState extends State<Login> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => mainpage()), //gotomainpage
+                              builder: (context) => Mainpage()), //gotomainpage
                         );
                       },
                     )),

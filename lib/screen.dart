@@ -9,21 +9,21 @@ class Screen extends StatefulWidget {
 
 class _ScreenState extends State<Screen> {
   //show SinginButton and RegisterButton
-  Widget ShowButton() {
+  Widget showbutton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        SignIn(),
+        signin(),
         SizedBox(
           width: 10.0,
         ),
-        Register(),
+        register(),
       ],
     );
   }
 
   //SinginButton
-  Widget SignIn() {
+  Widget signin() {
     return RaisedButton(
         shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black)),
         color: Colors.white,
@@ -43,7 +43,7 @@ class _ScreenState extends State<Screen> {
   }
 
   //RegisterButton
-  Widget Register() {
+  Widget register() {
     return RaisedButton(
         shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black)),
         color: Colors.black,
@@ -92,7 +92,7 @@ class _ScreenState extends State<Screen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        ShowButton(),
+                        showbutton(),
                       ],
                     )),
               ],

@@ -11,7 +11,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   //insert IconBack
-  Widget BackBotton() {
+  Widget backbotton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -41,7 +41,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             padding: EdgeInsets.all(00),
             child: ListView(
               children: <Widget>[
-                BackBotton(),
+                backbotton(),
                 Container(
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),

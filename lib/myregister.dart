@@ -14,7 +14,7 @@ class _MyRegisterState extends State<MyRegister> {
   TextEditingController emailController = TextEditingController();
   TextEditingController confirmpasswordController = TextEditingController();
 
-  Widget BackBotton() {
+  Widget backbotton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -44,7 +44,7 @@ class _MyRegisterState extends State<MyRegister> {
             padding: EdgeInsets.all(00),
             child: ListView(
               children: <Widget>[
-                BackBotton(),
+                backbotton(),
                 Container(
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
