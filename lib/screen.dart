@@ -75,14 +75,14 @@ class _ScreenState extends State<Screen> {
                     alignment: Alignment.center, //layout
                     padding: EdgeInsets.only(top: 180), //set Border
                     child: Text(
-                      'Bookusss',
+                      'Booku',
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 80),
                     )),
                 Container(
-                  padding: EdgeInsets.only(top: 204), //blankbox
+                  padding: EdgeInsets.only(top: 295), //blankbox
                 ),
                 Container(
                     //showbutton
