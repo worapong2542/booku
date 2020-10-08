@@ -8,6 +8,7 @@ class Screen extends StatefulWidget {
 }
 
 class _ScreenState extends State<Screen> {
+  //show SinginButton and RegisterButton
   Widget ShowButton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -21,6 +22,7 @@ class _ScreenState extends State<Screen> {
     );
   }
 
+  //SinginButton
   Widget SignIn() {
     return RaisedButton(
         shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black)),
@@ -40,6 +42,7 @@ class _ScreenState extends State<Screen> {
         });
   }
 
+  //RegisterButton
   Widget Register() {
     return RaisedButton(
         shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black)),
@@ -62,14 +65,15 @@ class _ScreenState extends State<Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.grey, //Background set in grey
         body: Padding(
-            padding: EdgeInsets.all(0),
+            padding: EdgeInsets.all(0), //set Border
             child: ListView(
+              //show list
               children: <Widget>[
                 Container(
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.only(top: 180),
+                    alignment: Alignment.center, //layout
+                    padding: EdgeInsets.only(top: 180), //set Border
                     child: Text(
                       'Booku',
                       style: TextStyle(
@@ -78,9 +82,10 @@ class _ScreenState extends State<Screen> {
                           fontSize: 80),
                     )),
                 Container(
-                  padding: EdgeInsets.only(top: 295),
+                  padding: EdgeInsets.only(top: 204), //blankbox
                 ),
                 Container(
+                    //showbutton
                     height: 90,
                     color: Colors.white,
                     child: Row(

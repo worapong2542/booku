@@ -2,7 +2,7 @@ import 'package:booku/screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()); //run app
 }
 
 class MyApp extends StatelessWidget {
@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Colors.black,
+        primaryColor: Colors.black, //set theme
       ),
-      home: Screen(),
+      home: Screen(), //run screen page
     );
   }
 }

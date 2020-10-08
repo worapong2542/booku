@@ -1,3 +1,6 @@
+import 'package:booku/Forgot.dart';
+import 'package:booku/mainpage.dart';
+import 'package:booku/myregister.dart';
 import 'package:booku/screen.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +10,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  //set Variable get data
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -17,11 +21,11 @@ class _LoginState extends State<Login> {
       children: <Widget>[
         IconButton(
           padding: new EdgeInsets.all(0),
-          icon: Icon(Icons.arrow_back_ios, size: 30.0),
+          icon: Icon(Icons.arrow_back_ios, size: 30.0), //insert icon
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Screen()),
+              MaterialPageRoute(builder: (context) => Screen()), //BacktoScreen
             );
           },
         ),
@@ -92,6 +96,11 @@ class _LoginState extends State<Login> {
                       onPressed: () {
                         print(nameController.text);
                         print(passwordController.text);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mainpage()), //gotomainpage
+                        );
                       },
                     )),
                 SizedBox(
@@ -100,7 +109,12 @@ class _LoginState extends State<Login> {
                 FlatButton(
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {
-                    //forgot password screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ForgotPassword()), //GotoForgotpassword
+                    );
                   },
                   textColor: Colors.grey,
                   child: Text('Forgot Password?'),
@@ -118,7 +132,10 @@ class _LoginState extends State<Login> {
                         style: TextStyle(fontSize: 15),
                       ),
                       onPressed: () {
-                        //signup screen
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyRegister()),
+                        );
                       },
                     )
                   ],

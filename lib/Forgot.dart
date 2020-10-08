@@ -1,19 +1,16 @@
-import 'package:booku/login.dart';
 import 'package:booku/screen.dart';
 import 'package:flutter/material.dart';
 
-class MyRegister extends StatefulWidget {
+class ForgotPassword extends StatefulWidget {
   @override
-  _MyRegisterState createState() => _MyRegisterState();
+  _ForgotPasswordState createState() => _ForgotPasswordState();
 }
 
-class _MyRegisterState extends State<MyRegister> {
+class _ForgotPasswordState extends State<ForgotPassword> {
   //set Variable get data
   TextEditingController nameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
   TextEditingController emailController = TextEditingController();
-  TextEditingController confirmpasswordController = TextEditingController();
-
+  //insert IconBack
   Widget BackBotton() {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -59,7 +56,7 @@ class _MyRegisterState extends State<MyRegister> {
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'Register',
+                      'Forgot Password',
                       style: TextStyle(fontSize: 20),
                     )),
                 Container(
@@ -83,29 +80,7 @@ class _MyRegisterState extends State<MyRegister> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
-                    obscureText: true,
-                    controller: passwordController,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Password',
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
-                    obscureText: true,
-                    controller: confirmpasswordController,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Confirm Password',
-                    ),
-                  ),
-                ),
-                Container(
-                  height: 50,
+                  height: 25, //blankbox
                 ),
                 Container(
                     height: 50,
@@ -113,13 +88,16 @@ class _MyRegisterState extends State<MyRegister> {
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.black,
-                      child: Text('Register'),
+                      child: Text('Send Email'),
                       onPressed: () {
+                        //show in console log
                         print(nameController.text);
-                        print(passwordController.text);
+                        print(emailController.text);
+                        print('Sending your Email');
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Login()),
+                          MaterialPageRoute(
+                              builder: (context) => Screen()), //BacktoScreen
                         );
                       },
                     )),
