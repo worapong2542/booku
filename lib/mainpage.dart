@@ -1,7 +1,10 @@
-import 'package:booku/screen.dart';
 import 'package:booku/test.dart';
 import 'package:flutter/material.dart';
 import 'package:booku/settingbar.dart';
+import 'package:booku/home.dart';
+import 'package:booku/search.dart';
+import 'package:booku/store.dart';
+import 'package:booku/libary.dart';
 
 class Mainpage extends StatefulWidget {
   @override
@@ -17,11 +20,11 @@ class _MainpageState extends State<Mainpage> {
   }
 
   final List<Widget> page = [
+    Home(),
+    Store(),
     Testop(),
-    Testop(),
-    Testop(),
-    Testop(),
-    Testop(),
+    Search(),
+    Libary(),
   ];
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,20 +44,20 @@ class _MainpageState extends State<Mainpage> {
             title: Text("Home"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
-            title: Text("Messages"),
+            icon: Icon(Icons.shopping_cart),
+            title: Text("Store"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text("Profile"),
+            icon: Icon(Icons.camera_alt),
+            title: Text("Scan"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text("Profile"),
+            icon: Icon(Icons.search),
+            title: Text("Search"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text("Profile"),
+            icon: Icon(Icons.import_contacts),
+            title: Text("Libary"),
           ),
         ],
       ),

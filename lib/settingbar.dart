@@ -1,5 +1,10 @@
+import 'package:booku/libary.dart';
+import 'package:booku/menusetting/setting.dart';
+import 'package:booku/wishlist.dart';
 import 'package:flutter/material.dart';
+import 'menusetting/language.dart';
 import 'screen.dart';
+import 'menusetting/noti.dart';
 
 class SettingBar extends StatelessWidget {
   @override
@@ -24,7 +29,7 @@ class SettingBar extends StatelessWidget {
             title: Text('Libary'),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Screen()));
+                  context, MaterialPageRoute(builder: (context) => Libary()));
             },
           ),
           ListTile(
@@ -32,7 +37,7 @@ class SettingBar extends StatelessWidget {
             title: Text('Wish List'),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Screen()));
+                  context, MaterialPageRoute(builder: (context) => Wishlist()));
             },
           ),
           ListTile(
@@ -40,7 +45,7 @@ class SettingBar extends StatelessWidget {
             title: Text('Notification'),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Screen()));
+                  context, MaterialPageRoute(builder: (context) => Noti()));
             },
           ),
           ListTile(
@@ -48,7 +53,7 @@ class SettingBar extends StatelessWidget {
             title: Text('Setting'),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Screen()));
+                  context, MaterialPageRoute(builder: (context) => Setting()));
             },
           ),
           ListTile(
@@ -56,7 +61,7 @@ class SettingBar extends StatelessWidget {
             title: Text('Language'),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Screen()));
+                  context, MaterialPageRoute(builder: (context) => Language()));
             },
           ),
           ListTile(
