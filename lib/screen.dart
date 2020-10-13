@@ -15,7 +15,7 @@ class _ScreenState extends State<Screen> {
       children: <Widget>[
         signin(),
         SizedBox(
-          width: 10.0,
+          width: 25.0,
         ),
         register(),
       ],
@@ -31,7 +31,7 @@ class _ScreenState extends State<Screen> {
           'Sign in',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 20.0,
+            fontSize: 25.0,
           ),
         ),
         onPressed: () {
@@ -51,7 +51,7 @@ class _ScreenState extends State<Screen> {
           'Register',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 20.0,
+            fontSize: 25.0,
           ),
         ),
         onPressed: () {
