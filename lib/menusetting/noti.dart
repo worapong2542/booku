@@ -37,7 +37,7 @@ class _NotiState extends State<Noti> {
     return Scaffold(
         body: Padding(
       padding: EdgeInsets.all(00),
-      child: new Text('setting'),
+      child: new Text('Notification'),
     ));
   }
 }
