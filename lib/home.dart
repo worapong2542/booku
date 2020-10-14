@@ -8,134 +8,169 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  // Widget Callbook() {
+  //   return ();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-          //  Padding(
-          //   padding: EdgeInsets.all(00),
-          //   child: ListView(
-          //     children: <Widget>[
-          //       Container(child: Text("NEW !")),
-          //       Row(),
-          //       Container(child: Text("HOT !")),
-          //       Row(),
-          //     ],
-          //   ),
-          // ),
-          Padding(
-        padding: const EdgeInsets.only(left: 18),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             //1
             SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.only(right: 18),
+              padding: const EdgeInsets.only(left: 18),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Pilihan Terlaris",
+                    "NEW !",
                     style: Theme.of(context)
                         .textTheme
                         .bodyText1
-                        .copyWith(fontSize: 13),
+                        .copyWith(fontSize: 16),
                   ),
-                  Text(
-                    "Lihat Semua",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        .copyWith(fontSize: 11, color: Colors.green),
-                  )
+                  // Text(
+                  //   "Lihat Semua",
+                  //   style: Theme.of(context)
+                  //       .textTheme
+                  //       .bodyText1
+                  //       .copyWith(fontSize: 11, color: Colors.green),
+                  // )
                 ],
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 10),
             Container(
+              padding: const EdgeInsets.only(left: 18),
               height: 142,
               width: double.infinity,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   ImageScroll(
-                    imgpath: "images/MieAyam.jpg",
-                    text: "Mie Ayam",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/NasiGoreng.jpg",
-                    text: "Nasi Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Kwetiausapi.jpg",
-                    text: "Kwetiau Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Bihun.jpg",
-                    text: "Bihun Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Pempek.jpg",
-                    text: "Pempek Palembang",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                 ],
               ),
             ),
-            //2
+//22222222222222222222222222
             SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.only(right: 18),
+              padding: const EdgeInsets.only(left: 18),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Pilihan Terlaris",
+                    "HOT !",
                     style: Theme.of(context)
                         .textTheme
                         .bodyText1
-                        .copyWith(fontSize: 13),
+                        .copyWith(fontSize: 16),
                   ),
-                  Text(
-                    "Lihat Semua",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText1
-                        .copyWith(fontSize: 11, color: Colors.green),
-                  )
                 ],
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 10),
             Container(
+              padding: const EdgeInsets.only(left: 18),
               height: 142,
               width: double.infinity,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   ImageScroll(
-                    imgpath: "images/MieAyam.jpg",
-                    text: "Mie Ayam",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/NasiGoreng.jpg",
-                    text: "Nasi Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Kwetiausapi.jpg",
-                    text: "Kwetiau Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Bihun.jpg",
-                    text: "Bihun Goreng",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                   ImageScroll(
-                    imgpath: "images/Pempek.jpg",
-                    text: "Pempek Palembang",
+                    imgpath: "images/book.jpg",
+                    text: "book",
                   ),
                 ],
               ),
-            )
+            ),
+//3333333333333333333333333333333333333333333333
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.only(left: 18),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "RECOMMEND !",
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyText1
+                        .copyWith(fontSize: 16),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              padding: const EdgeInsets.only(left: 18),
+              height: 142,
+              width: double.infinity,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  ImageScroll(
+                    imgpath: "images/book.jpg",
+                    text: "book",
+                  ),
+                  ImageScroll(
+                    imgpath: "images/book.jpg",
+                    text: "book",
+                  ),
+                  ImageScroll(
+                    imgpath: "images/book.jpg",
+                    text: "book",
+                  ),
+                  ImageScroll(
+                    imgpath: "images/book.jpg",
+                    text: "book",
+                  ),
+                  ImageScroll(
+                    imgpath: "images/book.jpg",
+                    text: "book",
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

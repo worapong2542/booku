@@ -30,7 +30,7 @@ class _MainpageState extends State<Mainpage> {
     return Scaffold(
       //appBar: AppBar(title: Text(title)),
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.black,
       ),
       drawer: SettingBar(),
       bottomNavigationBar: BottomNavigationBar(
