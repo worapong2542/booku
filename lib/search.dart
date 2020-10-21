@@ -13,7 +13,17 @@ class _SearchState extends State<Search> {
     return Scaffold(
         body: Padding(
       padding: EdgeInsets.all(00),
-      child: new Text('search'),
+      child: Container(
+        padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+        child: TextField(
+          obscureText: true,
+          // controller: passwordController,
+          decoration: InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: 'Search',
+          ),
+        ),
+      ),
     ));
   }
 }

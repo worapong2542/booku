@@ -8,6 +8,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  // ignore: non_constant_identifier_names
   Widget Callbook() {
     return Container(
       padding: const EdgeInsets.only(left: 18),
@@ -41,6 +42,7 @@ class _HomeState extends State<Home> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   Widget Header(name) {
     return Padding(
       padding: const EdgeInsets.only(left: 18),
@@ -104,6 +106,7 @@ class ImageScroll extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //get img and text.show in screen
     return Padding(
       padding: const EdgeInsets.only(right: 14),
       child: Column(
