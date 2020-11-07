@@ -41,23 +41,23 @@ class _MainpageState extends State<Mainpage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text("Home"),
+            label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
-            title: Text("Store"),
+            label: "Store",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.camera_alt),
-            title: Text("Scan"),
+            label: "Scan",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            title: Text("Search"),
+            label: "Search",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.import_contacts),
-            title: Text("Libary"),
+            label: "Libary",
           ),
         ],
       ),
