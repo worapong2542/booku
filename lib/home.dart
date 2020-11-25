@@ -1,3 +1,4 @@
+import 'package:booku/store.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -75,7 +76,18 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             //1
             SizedBox(height: 30),
-            Header("New !"),
+            FlatButton(
+              padding: EdgeInsets.all(8.0),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => Store()), //GotoForgotpassword
+                );
+              },
+              textColor: Colors.black,
+              child: Text('NEW !'),
+            ),
             SizedBox(height: 10),
             Callbook(),
             //2
