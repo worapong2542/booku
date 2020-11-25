@@ -1,4 +1,6 @@
+import 'package:booku/libary.dart';
 import 'package:booku/menusetting/setting.dart';
+import 'package:booku/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'menusetting/language.dart';
 import 'screen.dart';
@@ -21,6 +23,22 @@ class SettingBar extends StatelessWidget {
               ),
               backgroundColor: Colors.white,
             ),
+          ),
+          ListTile(
+            leading: Icon(Icons.library_books),
+            title: Text('library'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Libary()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.favorite),
+            title: Text('Wishlist'),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Wishlist()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.notification_important),
