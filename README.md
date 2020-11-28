@@ -1,6 +1,6 @@
-# booku
+# qr_bar_code_flutter
 
-A new Flutter project.
+A new Flutter application.
 
 ## Getting Started
 
