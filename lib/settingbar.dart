@@ -1,6 +1,6 @@
-import 'package:booku/libary.dart';
-import 'package:booku/menusetting/setting.dart';
-import 'package:booku/wishlist.dart';
+import 'package:qr_bar_code_flutter/libary.dart';
+import 'package:qr_bar_code_flutter/menusetting/setting.dart';
+import 'package:qr_bar_code_flutter/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'menusetting/language.dart';
 import 'screen.dart';

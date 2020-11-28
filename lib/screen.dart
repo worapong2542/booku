@@ -1,6 +1,6 @@
-import 'package:booku/myregister.dart';
+import 'package:qr_bar_code_flutter/myregister.dart';
 import 'package:flutter/material.dart';
-import 'package:booku/login.dart';
+import 'package:qr_bar_code_flutter/login.dart';
 
 class Screen extends StatefulWidget {
   @override

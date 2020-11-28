@@ -1,5 +1,5 @@
-import 'package:booku/home.dart';
-import 'package:booku/mainpage.dart';
+import 'package:qr_bar_code_flutter/home.dart';
+import 'package:qr_bar_code_flutter/mainpage.dart';
 import 'package:flutter/material.dart';
 
 class Wishlist extends StatefulWidget {

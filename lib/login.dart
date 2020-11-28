@@ -1,7 +1,7 @@
-import 'package:booku/Forgot.dart';
-import 'package:booku/mainpage.dart';
-import 'package:booku/myregister.dart';
-import 'package:booku/screen.dart';
+import 'package:qr_bar_code_flutter/Forgot.dart';
+import 'package:qr_bar_code_flutter/mainpage.dart';
+import 'package:qr_bar_code_flutter/myregister.dart';
+import 'package:qr_bar_code_flutter/screen.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {

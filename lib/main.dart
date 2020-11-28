@@ -1,4 +1,4 @@
-import 'package:booku/screen.dart';
+import 'package:qr_bar_code_flutter/screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

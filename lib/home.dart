@@ -1,4 +1,4 @@
-import 'package:booku/store.dart';
+import 'package:qr_bar_code_flutter/store.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {

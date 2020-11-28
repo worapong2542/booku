@@ -1,4 +1,4 @@
-import 'package:booku/menusetting/noti.dart';
+import 'package:qr_bar_code_flutter/menusetting/noti.dart';
 import 'package:flutter/material.dart';
 
 import '../mainpage.dart';

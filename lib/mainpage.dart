@@ -1,10 +1,10 @@
-import 'package:booku/test.dart';
 import 'package:flutter/material.dart';
-import 'package:booku/settingbar.dart';
-import 'package:booku/home.dart';
-import 'package:booku/search.dart';
-import 'package:booku/store.dart';
-import 'package:booku/libary.dart';
+import 'package:qr_bar_code_flutter/settingbar.dart';
+import 'package:qr_bar_code_flutter/home.dart';
+import 'package:qr_bar_code_flutter/search.dart';
+import 'package:qr_bar_code_flutter/store.dart';
+import 'package:qr_bar_code_flutter/libary.dart';
+import 'package:qr_bar_code_flutter/scan.dart';
 
 class Mainpage extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _MainpageState extends State<Mainpage> {
   final List<Widget> page = [
     Home(),
     Store(),
-    Testop(),
+    Scan(),
     Search(),
     Libary(),
   ];
