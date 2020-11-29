@@ -12,8 +12,9 @@ class _StoreState extends State<Store> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: EdgeInsets.all(00),
-      child: new Text('store'),
-    ));
+            padding: EdgeInsets.all(00),
+            child: ListView(
+              children: <Widget>[Image.asset("images/store.png")],
+            )));
   }
 }
